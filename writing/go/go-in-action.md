@@ -1,6 +1,7 @@
 ## 初读《GO IN ACTION》  
 
-### ![TODO书籍封面侵删](url)
+![书籍封面侵删](https://github.com/hhdssmys/AfterReading/blob/master/images/go/go-in-action_cover.jpg)  
+ 封面图  
 
  个人感觉本书讲的东西太少，不能作为一本上手教程，也不能全面了解 go 语言的特性。 
  
@@ -13,5 +14,6 @@
  2. 基准测试  
  测试代码性能的方法
  ### `并发` 一章也较为不错  
- ![线程和进程的关系](url)
+ ![线程和进程的关系](https://github.com/hhdssmys/AfterReading/blob/master/images/go/go-thread_content.jpg)  
+ 线程和进程的关系  
  
