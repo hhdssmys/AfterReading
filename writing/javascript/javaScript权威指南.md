@@ -1,5 +1,5 @@
 ## 初读《javaScript权威指南》  
-### ![封面图](url)
+ ![封面图](https://github.com/hhdssmys/AfterReading/blob/master/images/Javascript/javascript-authority-guide_cover.png)
 ### 此书甚好，极为全面，建议反复研读。  
  重点分为这几部分：
  1. 语法部分（1-5）：词法结构+类型+表达式+语句
