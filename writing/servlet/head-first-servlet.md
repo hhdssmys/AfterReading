@@ -36,4 +36,12 @@
 32. response.setContentType(),设置响应内容的类型（MIME类型），服务器一次只响应一种类型，不能中途更改毫无意义，response.getWriter(字符)(或者其他IO流getOutputStream(字节)，完成响应内容IO，可以实现HTML，jar多类型文件输出)
 33. ctx.getResourceAsStream() "/"表示从应用的根目录开始
 34. 重定向响应码 301，重定向地址在首部 Location属性 ，sendRedirect()可以使用绝对与相对地址，其中相对地址区别于"/",不带"/"表示相对于原资源的位置，带"/"表示/应用根目录开始的路径  
-35. 
+35. servletConfig.getInitParameter() 与 servletContext.getInitParameter()，servlet 初始化参数与应用上下文初始化参数，运行时不可修改，init方法注入一个servletConfig对象
+36. servlet 中包含servletConfig与servletContext（servlet区别于普通对象的地方），其中servletConfig可以通过getServletContext得到第二个对象的引用
+37. servletContextListener可以监听servletContext（应用上下文）的初始化与销毁事件
+38. 容器根据接口类型判断监听器的事件类型
+39. servletContext 上下文作用域不是线程安全的，所有的servlet 都可以访问，保护属性是开发者自己的事，所以servletContext设计时不考虑线程同步，可能带来不必要的开销也影响并发性
+40. 同步服务方法（sysc ... doGet）不能保证上下文属性的线程安全，他只能保证同一个servlet一次运行一个线程，但是不能保证其他servlet访问修改 servletContext中的属性，要想保证上下文属性的线程安全，可以对其自身servletContext加锁
+41. HTTPsession ，不关浏览器一般算是一个会话，所以存在同一个session中多个浏览器窗口发出请求，存在多个访问并发所以httpsession的属性对象也是不安全的
+42. singleThreadModel，单线程安全策略，基本废弃了
+43. requestDispatcher请求分派转发（servletRequest，servletContext对象得到）
