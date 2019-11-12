@@ -45,3 +45,9 @@
 41. HTTPsession ，不关浏览器一般算是一个会话，所以存在同一个session中多个浏览器窗口发出请求，存在多个访问并发所以httpsession的属性对象也是不安全的
 42. singleThreadModel，单线程安全策略，基本废弃了
 43. requestDispatcher请求分派转发（servletRequest，servletContext对象得到）
+44. 对于客户的第一个请求，容器会生成一个唯一的sessionId,通过响应返回给客户，客户在之后的同会话的其他请求中发回这个sessionId，以标识用户身份（http是无状态的），容器根据sessionId 寻找会话状态，把会话与请求关联
+45. request.getSession() 返回一个httpsession，可能是新建的，或者已存在的; session。isNew() 可以判断session是新建还是已存在的
+46. request.getSession(boolean) ，参数是false时返回一个已存在的httpsession，可能为null
+47. 客户与服务器交换sessionId信息：1）cookie，set-Cookie 首部 2）URL重写（必须编码encodeURL，不能在静态页面使用） ，取得sessionID信息，并加在每个请求后面“;JsessionId=xxx”（容器开发商有不同的处理方式，这是Tomcat的）
+48. 会话销毁的场景：1）超时 2）会话调用invalidate() 方法 3）应用结束
+49. 每个VM中有一个servletContext，每个VM上的每个servlet有一个servletConfig，但是对于每个应用给定的sessionId只有一个httpSession对象，
