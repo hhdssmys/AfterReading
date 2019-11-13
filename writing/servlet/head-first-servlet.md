@@ -46,8 +46,17 @@
 42. singleThreadModel，单线程安全策略，基本废弃了
 43. requestDispatcher请求分派转发（servletRequest，servletContext对象得到）
 44. 对于客户的第一个请求，容器会生成一个唯一的sessionId,通过响应返回给客户，客户在之后的同会话的其他请求中发回这个sessionId，以标识用户身份（http是无状态的），容器根据sessionId 寻找会话状态，把会话与请求关联
-45. request.getSession() 返回一个httpsession，可能是新建的，或者已存在的; session。isNew() 可以判断session是新建还是已存在的
+45. request.getSession() 返回一个httpsession，可能是新建的，或者已存在的; session.isNew() 可以判断session是新建还是已存在的
 46. request.getSession(boolean) ，参数是false时返回一个已存在的httpsession，可能为null
 47. 客户与服务器交换sessionId信息：1）cookie，set-Cookie 首部 2）URL重写（必须编码encodeURL，不能在静态页面使用） ，取得sessionID信息，并加在每个请求后面“;JsessionId=xxx”（容器开发商有不同的处理方式，这是Tomcat的）
 48. 会话销毁的场景：1）超时 2）会话调用invalidate() 方法 3）应用结束
 49. 每个VM中有一个servletContext，每个VM上的每个servlet有一个servletConfig，但是对于每个应用给定的sessionId只有一个httpSession对象，
+50. 容器不支持分布式应用，就得支持VM迁移会话，会话从VM1迁移至VM2，意味着会话在VM1上的钝化，在VM2上的激活,会话中的对象不会丢失（HttpSessionActivationListenter）
+51. 容器将jsp转化为servlet
+52. JSP 指令（3个，page，taglib，include），scriptLet（Java脚本），表达式（表达式会成为out.print()的参数，所以表达式不能返回void），JSP声明,EL表达式，jsp动作，所有的java脚本和表达式都会放在服务方法中，都是局部的，JSP声明可以声明静态和实例变量与方法
+53. page 指令的目的 是 为容器提供一些信息，容器在把JSP转化为servlet时会用到这些信息，如import属性；taglib 指令定义JSP可以使用的标签库
+54. 容器处理JSP，1）查看指令 2）创建一个HttpServlet子类（处理import 属性，在package下写） 3)处理JSP声明，放在服务方法前，类声明下 4）建立服务方法_jspService()（_下划线代表不可覆盖）,最前面声明并初始化所有隐式对象，服务方法由servlet超类的service()方法调用 5）将普通文本，java脚本，表达式格式化于服务方法，out响应输出
+55. 默认情况下jsp转换servlet在一个VM生命周期中只发生一次，但是不同容器有不同的处理，默认第一次请求时，发生jsp 转换为.java 文件，无语法等明显错误后再转换为 .class,然后处理请求和普通servlet一样
+56. 可以通过pageContext获取其他作用域的对象，getRequest,getSession，getServletContext，pageContext可以查询四个作用域的任意属性对象
+57. JSP2.0 引入 EL 表达式语言规范 ${something}，禁用java脚本的途径<jsp-config><scripting-invalid>true</scripting-invalid></jsp-config>，page指令的属性值true的优先级要高于DD文件中的配置
+58. JSP的out的类型JspWrite和 response.getWrite()的类型不一样，不是一个继承体系，但是方法基本差不多，前者多了缓存
