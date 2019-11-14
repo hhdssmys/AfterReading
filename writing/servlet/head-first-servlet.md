@@ -55,8 +55,13 @@
 51. 容器将jsp转化为servlet
 52. JSP 指令（3个，page，taglib，include），scriptLet（Java脚本），表达式（表达式会成为out.print()的参数，所以表达式不能返回void），JSP声明,EL表达式，jsp动作，所有的java脚本和表达式都会放在服务方法中，都是局部的，JSP声明可以声明静态和实例变量与方法
 53. page 指令的目的 是 为容器提供一些信息，容器在把JSP转化为servlet时会用到这些信息，如import属性；taglib 指令定义JSP可以使用的标签库
-54. 容器处理JSP，1）查看指令 2）创建一个HttpServlet子类（处理import 属性，在package下写） 3)处理JSP声明，放在服务方法前，类声明下 4）建立服务方法_jspService()（_下划线代表不可覆盖）,最前面声明并初始化所有隐式对象，服务方法由servlet超类的service()方法调用 5）将普通文本，java脚本，表达式格式化于服务方法，out响应输出
+54. 容器处理JSP，1）查看指令 2）创建一个HttpServlet子类（处理import 属性，在package下写） 3)处理JSP声明，放在服务方法前，类声明下 4）建立服务方法_jspService()（_下划线代表不可覆盖）,最前面声明并初始化所有隐式对象，服务方法由servlet超类的service()方法调用 5）将普通文本，java脚本，表达式,jsp动作格式化于服务方法，out响应输出
 55. 默认情况下jsp转换servlet在一个VM生命周期中只发生一次，但是不同容器有不同的处理，默认第一次请求时，发生jsp 转换为.java 文件，无语法等明显错误后再转换为 .class,然后处理请求和普通servlet一样
 56. 可以通过pageContext获取其他作用域的对象，getRequest,getSession，getServletContext，pageContext可以查询四个作用域的任意属性对象
 57. JSP2.0 引入 EL 表达式语言规范 ${something}，禁用java脚本的途径<jsp-config><scripting-invalid>true</scripting-invalid></jsp-config>，page指令的属性值true的优先级要高于DD文件中的配置
 58. JSP的out的类型JspWrite和 response.getWrite()的类型不一样，不是一个继承体系，但是方法基本差不多，前者多了缓存
+59. 简单bean：无参构造函数，get,set
+60. EL表达式妥善处理null，不轻易抛出异常，算术表达式中 null 被当做 0，逻辑表达式null当做false
+61. include指令与jsp:include动作：前者就是将模板页的内容在服务方法——JSPService()中out打印出来；而后者在运行时插入模板页的响应，服务方法有个requestDispatcher.include的调用;在转化servlet时，前者将两个jsp合并成一个.java然后编译一个.class，后者将主页面转化为.java(include指令是这个文件中的requestDispatcher.include方法调用)，编译，请求运行时，执行到include语句，再去转换include的页面，转换为.java,.class等，所以说后者是运行时发生
+62. 请求转发前先清空响应缓冲区
+63. 
