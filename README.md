@@ -14,4 +14,4 @@
 7. [Java 并发编程之美](https://github.com/hhdssmys/AfterReading/blob/master/writing/java/java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E4%B9%8B%E7%BE%8E.md)&ensp;&ensp;&ensp;★★★★★  
 8. [Kafka 权威指南](知识架构全面，尚未精读，但初感不错)&ensp;&ensp;&ensp;★★★☆
 9. [Head-First-Servlet](https://github.com/hhdssmys/AfterReading/blob/master/writing/servlet/head-first-servlet.md)&ensp;&ensp;&ensp;★★★★
-
+10. [Activiti &ensp;&ensp;&ensp; 实战](https://github.com/hhdssmys/AfterReading/blob/master/writing/activiti/activiti实战.md)&ensp;&ensp;&ensp;★★★★
