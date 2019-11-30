@@ -1,3 +1,6 @@
+## 《Activiti 实战》
+可以较好建立 activiti 的知识架构，但是感觉 activiti 的局限性很大，本书第 4 章的 BPMN 的规范可能是具有最高价值的部分
+
 1. 工作流生命周期：定义，发布，执行，监控，优化  
 2. activiti 提供 7 大接口，均通过 ProcessEngine 获取，支持链式编程  
 3. activiti 架构与组件  
