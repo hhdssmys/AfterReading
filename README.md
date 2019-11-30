@@ -11,5 +11,6 @@
 4. [ 许晓斌 &ensp;&ensp;&ensp; maven 实战 ](https://github.com/hhdssmys/AfterReading/blob/master/writing/maven/maven%E5%AE%9E%E6%88%98.md)&ensp;&ensp;&ensp;★★★★ 
 5. [  LINUX+SHELL脚本攻略 ](https://github.com/hhdssmys/AfterReading/blob/master/writing/linux/LINUX%2BSHELL%E8%84%9A%E6%9C%AC%E6%94%BB%E7%95%A5.md)&ensp;&ensp;&ensp;★★★ 
 6. [linux命令行与shell脚本编程大全](https://github.com/hhdssmys/AfterReading/blob/master/writing/linux/linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8Eshell%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B%E5%A4%A7%E5%85%A8.md)&ensp;&ensp;&ensp;★★★★   
-7. [Java 并发编程之美](https://github.com/hhdssmys/AfterReading/blob/master/writing/java/java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E4%B9%8B%E7%BE%8E.md)&ensp;&ensp;&ensp;★★★★★
+7. [Java 并发编程之美](https://github.com/hhdssmys/AfterReading/blob/master/writing/java/java%E5%B9%B6%E5%8F%91%E7%BC%96%E7%A8%8B%E4%B9%8B%E7%BE%8E.md)&ensp;&ensp;&ensp;★★★★★  
+8. [Kafka 权威指南](知识架构全面，尚未精读，但初感不错)&ensp;&ensp;&ensp;★★★☆
 
