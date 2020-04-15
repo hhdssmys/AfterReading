@@ -20,6 +20,8 @@
 4. [Head-First-Servlet](https://github.com/hhdssmys/AfterReading/blob/master/writing/servlet/head-first-servlet.md)&ensp;&ensp;&ensp;★★★★
 5. [Activiti &ensp;&ensp;&ensp; 实战](https://github.com/hhdssmys/AfterReading/blob/master/writing/activiti/activiti实战.md)&ensp;&ensp;&ensp;★★★★
 6. [ O'Reilly 出版 &ensp;&ensp;&ensp; 微服务设计](https://github.com/hhdssmys/AfterReading/blob/master/writing/microService/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E8%AE%BE%E8%AE%A1.md)&ensp;&ensp;&ensp;★★★★  
+7. [ O'Reilly 出版 &ensp;&ensp;&ensp; Netty 实战](https://github.com/hhdssmys/AfterReading/blob/master/writing/netty/netty%E5%AE%9E%E6%88%98.md)&ensp;&ensp;&ensp;★★★★ 
+
 
 ### 三星区  
 1. [ O'Reilly 出版 &ensp;&ensp;&ensp; go 实战](https://github.com/hhdssmys/AfterReading/blob/master/writing/go/go-in-action.md)&ensp;&ensp;&ensp;★★★  
