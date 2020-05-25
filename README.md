@@ -27,6 +27,8 @@
 1. [ O'Reilly 出版 &ensp;&ensp;&ensp; go 实战](https://github.com/hhdssmys/AfterReading/blob/master/writing/go/go-in-action.md)&ensp;&ensp;&ensp;★★★  
 2. [  LINUX+SHELL脚本攻略 ](https://github.com/hhdssmys/AfterReading/blob/master/writing/linux/LINUX%2BSHELL%E8%84%9A%E6%9C%AC%E6%94%BB%E7%95%A5.md)&ensp;&ensp;&ensp;★★★ 
 3. [日版 图解TCP/IP &ensp;&ensp;&ensp; ★★★ ](https://github.com/hhdssmys/AfterReading/blob/master/writing/protocol/%E5%9B%BE%E8%A7%A3TCP%E5%8D%8F%E8%AE%AE.md)  
+4. [美版 算法图解 &ensp;&ensp;&ensp; ★★★ ](https://github.com/hhdssmys/AfterReading/blob/master/algorithm/算法图解.md)  
+
  
 
 
