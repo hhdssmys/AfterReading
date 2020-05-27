@@ -16,7 +16,7 @@
 ### 四星区  
 1. [ 许晓斌 &ensp;&ensp;&ensp; maven 实战 ](https://github.com/hhdssmys/AfterReading/blob/master/writing/maven/maven%E5%AE%9E%E6%88%98.md)&ensp;&ensp;&ensp;★★★★ 
 2. [linux命令行与shell脚本编程大全](https://github.com/hhdssmys/AfterReading/blob/master/writing/linux/linux%E5%91%BD%E4%BB%A4%E8%A1%8C%E4%B8%8Eshell%E8%84%9A%E6%9C%AC%E7%BC%96%E7%A8%8B%E5%A4%A7%E5%85%A8.md)&ensp;&ensp;&ensp;★★★★ 
-3. [Kafka 权威指南](知识架构全面，尚未精读，但初感不错)&ensp;&ensp;&ensp;★★★☆
+3. [O'Reilly 出版 &ensp;&ensp;&ensp; Kafka 权威指南](https://github.com/hhdssmys/AfterReading/blob/master/writing/middleware/Kafka%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97.md)&ensp;&ensp;&ensp;★★★★ 
 4. [Head-First-Servlet](https://github.com/hhdssmys/AfterReading/blob/master/writing/servlet/head-first-servlet.md)&ensp;&ensp;&ensp;★★★★
 5. [Activiti &ensp;&ensp;&ensp; 实战](https://github.com/hhdssmys/AfterReading/blob/master/writing/activiti/activiti实战.md)&ensp;&ensp;&ensp;★★★★
 6. [ O'Reilly 出版 &ensp;&ensp;&ensp; 微服务设计](https://github.com/hhdssmys/AfterReading/blob/master/writing/microService/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E8%AE%BE%E8%AE%A1.md)&ensp;&ensp;&ensp;★★★★  
