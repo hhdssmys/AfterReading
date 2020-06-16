@@ -24,6 +24,8 @@
 8. [丁威 &ensp;&ensp;&ensp; RocketMq 技术内幕](https://github.com/hhdssmys/AfterReading/blob/master/writing/middleware/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95.md)&ensp;&ensp;&ensp;★★★★
 9. [ 朱忠华 &ensp;&ensp;&ensp; Rabbitmq 实战指南](https://github.com/hhdssmys/AfterReading/blob/master/writing/middleware/RabbitMQ%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97.md)&ensp;&ensp;&ensp;★★★★
 10. [ O'Reilly 出版 &ensp;&ensp;&ensp; elasticSearch实战](https://github.com/hhdssmys/AfterReading/blob/master/writing/middleware/elasticSearch%E5%AE%9E%E6%88%98.md)&ensp;&ensp;&ensp;★★★★
+11. [ 倪超 &ensp;&ensp;&ensp; 从paxos到zookeeper分布式一致性原理与实践](https://github.com/hhdssmys/AfterReading/blob/master/writing/middleware/%E4%BB%8Epaxos%E5%88%B0zookeeper%E5%88%86%E5%B8%83%E5%BC%8F%E4%B8%80%E8%87%B4%E6%80%A7%E5%8E%9F%E7%90%86%E4%B8%8E%E5%AE%9E%E8%B7%B5.md)&ensp;&ensp;&ensp;★★★★
+
 
 
 ### 三星区  
