@@ -20,7 +20,10 @@
 4. [Head-First-Servlet](https://github.com/hhdssmys/AfterReading/blob/master/writing/servlet/head-first-servlet.md)&ensp;&ensp;&ensp;★★★★
 5. [Activiti &ensp;&ensp;&ensp; 实战](https://github.com/hhdssmys/AfterReading/blob/master/writing/activiti/activiti实战.md)&ensp;&ensp;&ensp;★★★★
 6. [ O'Reilly 出版 &ensp;&ensp;&ensp; 微服务设计](https://github.com/hhdssmys/AfterReading/blob/master/writing/microService/%E5%BE%AE%E6%9C%8D%E5%8A%A1%E8%AE%BE%E8%AE%A1.md)&ensp;&ensp;&ensp;★★★★  
-7. [ O'Reilly 出版 &ensp;&ensp;&ensp; Netty 实战](https://github.com/hhdssmys/AfterReading/blob/master/writing/netty/netty%E5%AE%9E%E6%88%98.md)&ensp;&ensp;&ensp;★★★★ 
+7. [ O'Reilly 出版 &ensp;&ensp;&ensp; Netty 实战](https://github.com/hhdssmys/AfterReading/blob/master/writing/netty/netty%E5%AE%9E%E6%88%98.md)&ensp;&ensp;&ensp;★★★★   
+8. [丁威 &ensp;&ensp;&ensp; RocketMq 技术内幕](https://github.com/hhdssmys/AfterReading/blob/master/writing/middleware/RocketMQ%E6%8A%80%E6%9C%AF%E5%86%85%E5%B9%95.md)&ensp;&ensp;&ensp;★★★★
+9. [ 朱忠华 &ensp;&ensp;&ensp; Rabbitmq 实战指南](https://github.com/hhdssmys/AfterReading/blob/master/writing/middleware/RabbitMQ%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97.md)&ensp;&ensp;&ensp;★★★★
+10. [ O'Reilly 出版 &ensp;&ensp;&ensp; elasticSearch实战](https://github.com/hhdssmys/AfterReading/blob/master/writing/middleware/elasticSearch%E5%AE%9E%E6%88%98.md)&ensp;&ensp;&ensp;★★★★
 
 
 ### 三星区  
