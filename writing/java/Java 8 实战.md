@@ -24,8 +24,11 @@ lambda 表达式：直接内连于方法参数，为函数式接口的抽象方�
 1. 声明性的--易读，复合性的---灵活，可并行---性能更好   
 2. 流只能消费一次，不可逆，不能重复消费同一个流，流是内部迭代   
 3. 流操作：1）中间操作：多个操作连接在一起形成复合查询链  2）终端操作：触发流处理，forEach，count，collect   
+中间操作将一个流转化为另一个流，目的是建立流水线，终端操作消耗流，产生结果  
 ```
-流操作       是否是终端操作     接收参数                             作用       
+流操作       是否是终端操作     接收参数                             作用    
+##### 排序
+sorted                        Comparator<T> (T,T)->int
 ###### 筛选与切片
 filter                        一个返回 boolean的函数                谓词筛选
 distinct                       无                                  去重
@@ -41,9 +44,19 @@ noneMatch     终端             谓词 boolean
 findAny       终端             无                                  返回流中的任意一个，返回值是Option<T>
 findFirst     终端             无
 #######  规约，反复结合流中的元素，产生一个计算值
-reduce                        初始值，BinaryOperator<T>  (T,T)->T   规约计算，返回值是Option<T>        
+reduce        终端                初始值，BinaryOperator<T>  (T,T)->T   规约计算，无初始值时规约返回值是Option<T>        
+##### 收集器，会对元素应对一个转换函数，将结果累积在一个数据结构中  ，汇总，分组，分区  
+collect       终端 
 
 ```
+##### 构建流
+1. 静态方法 Stream.of(args)
+2. 数组创建 Arrays.stream(args[]) 
+3. 文件产生 
+4. 函数创建无界流 stream.iterate stream.generate 应该与limit限制  
+##### 并行流，分块计算，再合并  
+parallelStream  
+分支合并框架  
 
 <hr />
 
